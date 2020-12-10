@@ -111,6 +111,7 @@ h1 {
   letter-spacing: 1px;
   margin-bottom: 1rem;
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .form-container form button:active {
@@ -143,4 +144,48 @@ h1 {
 }
 .attribution a {
   color: var(--accent-blue);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: url(images/bg-intro-desktop.png),
+      linear-gradient(
+        var(--primary-red-background),
+        var(--primary-red-background)
+      );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrapper {
+    flex-direction: row;
+    max-width: 1150px;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .showcase,
+  .signup {
+    width: 45%;
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .showcase p {
+    margin: 0;
+  }
+
+  .form-container {
+    padding: 3rem;
+  }
 }
