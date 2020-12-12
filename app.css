@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
   --primary-red-background: hsla(0, 100%, 74%, 1);
@@ -144,6 +144,30 @@ h1 {
 }
 .attribution a {
   color: var(--accent-blue);
+}
+
+.form-container form input.error {
+  background: url(images/icon-error.svg) no-repeat right 1rem center;
+  color: var(--primary-red);
+  border-color: var(--primary-red);
+  margin-bottom: 0.5rem;
+}
+
+.form-container form input.error::placeholder {
+  color: var(--primary-red);
+}
+
+.form-container form input + small {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--primary-red);
+  display: none;
+}
+
+.form-container form input.error + small {
+  display: inline;
 }
 
 @media (min-width: 1440px) {
